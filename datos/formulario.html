@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Formulario de Compra</title>
+<Style>
+body{
+
+background: -webkit-linear-gradient(left, #434C5A 20%, #38B0DE 60%, #094292 100%);
+background: -moz-linear-gradient(left, #434C5A 20%, #38B0DE 60%, #094292 100%);
+background: -ms-linear-gradient(left, #434C5A 20%, #38B0DE 60%, #094292 100%);
+	font: .81em/150% Arial, Helvetica, sans-serif;
+	color: #666;
+font-family:"Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+font-size:12px;
+}
+h1{font-family: tahoma;
+color: black;}
+p, h1, form, button{border:0; margin:0; padding:0;}
+.spacer{clear:both; height:1px;}
+/* ----------- My Form ----------- */
+.myform{ margin:0 auto; width:400px; padding:14px;
+}
+/* ----------- stylized ----------- */
+#stylized{
+border:solid 2px #b7ddf2;
+background:#ebf4fb;
+}
+#stylized h1 { font-size:14px; font-weight:bold; margin-bottom:8px;
+}
+#stylized p{ font-size:11px; color:#666666; margin-bottom:20px;
+border-bottom:solid 1px #b7ddf2;
+padding-bottom:10px;
+}
+#stylized label{ display:block; font-weight:bold; text-align:right; width:140px; float:left;
+}
+#stylized .small{ color:#666666; display:block; font-size:11px;
+font-weight:normal;
+text-align:right;
+width:140px;
+}
+#stylized input{
+float:left;
+font-size:12px; padding:4px 2px; border:solid 1px #aacfe4; width:200px;
+margin:2px 0 20px 10px;
+}
+#stylized button{
+clear:both;
+margin-left:150px; width:125px; height:31px;
+background:#666666 url(img/button.png) no-repeat;
+text-align:center; line-height:31px; color:#FFFFFF;
+font-size:11px;
+font-weight:bold;
+}
+</Style>
+</head>
+<body>
+<center><h1><p> Formulario de Compra </p></h1></center><br>
+<div id="stylized" class="myform">
+
+<!--<form  action="mailto:angel_elchino95@hotmail.com" method="post" 
+                                     enctype="text/plain">-->
+<form class="compra" action="enviado.html" method="post">
+ <table border="0">
+ <tr height="50">
+   <td>Nombre</td>
+   <td> 
+ <input name="nombre" type="Text" size="18" maxlength="18">
+   </td>
+ </tr>
+ <tr height="50">
+  <td>apellidos</td>
+  <td>
+<input type="text" name="apellidos" size="48" maxlength=48">
+  </td>
+ </tr>
+ <tr height="50">
+  <td>Direccion </td>
+  <td> 
+   <input name="f_n" type="text" size="18" maxlength="18">
+  </td>
+ </tr>
+ <tr height="50">
+  <td>c&oacute;digo postal</td>
+  <td>
+ <input type="text" name="cp" size="5" maxlength="5">
+  </td>
+ </tr>
+ <tr height="50">
+<TD>Nacionalidad:</TD>
+<TD>
+<SELECT>
+<OPTION value="Salvadoreño">Salvadore&ntilde;o(a)
+<OPTION value="Hondureño">Hondure&ntilde;o(a)
+<OPTION value="Guatemalteco">Guatemalteco(a)
+<OPTION value="Costarricense">Costarricense
+<OPTION value="Nicaraguense">Nicarag&uuml;ense
+<OPTION value="Panameño">Paname&ntilde;o(a)
+</SELECT>
+</TD>
+</TR> 
+  <tr>
+    <td>Tel&eacute;fono </td>
+    <td>
+  <input type="text" name="telefono" size="9" maxlength="9">
+  </td>
+ </tr>
+ <tr height="50">
+  <td>Compra</td>
+  <td> 
+     <select name="compra">
+         <option>Tarjeta de Credito
+         <option>Efectivo
+         <option>Cheque
+     </select>
+  <td>
+ </tr>
+
+ <tr height="50">
+  <td>Comentarios <br> Personales</td>
+  <td>
+  <textarea name="coment" rows="2" cols="30"> </textarea>
+  </td>
+ </tr>
+ <tr height="50">
+  <td> </td>
+  <td align="center">
+     <input type="submit" value="enviar los datos" > 
+     <input type="reset" value="borrar los datos">
+	  <input type="button" value="Atras" onclick=" javascript:history.go(-1)"></input>  
+     
+     
+  </td>
+ </tr>
+ 
+ </table>
+</form>
+<div>
+<ul>
+    <B>copyright © Lenguajes Interpretados en el Cliente</B>
+</ul>
+</div>
+</div>
+</body>
+</html>
